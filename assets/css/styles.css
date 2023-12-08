@@ -582,6 +582,7 @@ input {
     display: grid;
     grid-template-columns: auto 1fr auto;
     margin-top: 70px;
+    column-gap: 71px;
 }
 
 .service-item {
@@ -621,4 +622,39 @@ input {
 
 .service-item__more::after {
     content: url(../icons/arrow-up-right.svg);
+}
+
+.service__media {
+    position: relative;
+    margin-top: 18px;
+}
+
+.service__media::after {
+    content: "";
+    position: absolute;
+    inset: auto 16px 0;
+    height: 350px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    border-radius: 10px;
+}
+.service__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.service__cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.service__cta {
+    min-width: 214px;
+    color: #ff5b2e;
+    border-color: currentColor;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
 }
