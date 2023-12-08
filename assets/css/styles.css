@@ -704,7 +704,7 @@ input {
     content: "";
     position: absolute;
     inset: auto 0 0 0;
-    height: 266px;
+    height: 94%;
     border-radius: 130px;
     background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
 }
@@ -722,31 +722,36 @@ input {
 }
 
 .staff-item__img-wrap::after {
+    content: "";
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
+    width: calc(100% + 36px);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 
 .staff-item:nth-child(1) .staff-item__img-wrap::after {
-    content: url(../imgs/staff-decor-01.svg);
+    background-image: url(../imgs/staff-decor-01.svg);
 }
 
 .staff-item:nth-child(2) .staff-item__img-wrap::after {
-    content: url(../imgs/staff-decor-02.svg);
+    background-image: url(../imgs/staff-decor-02.svg);
 }
 
 .staff-item:nth-child(3) .staff-item__img-wrap::after {
-    content: url(../imgs/staff-decor-03.svg);
+    background-image: url(../imgs/staff-decor-03.svg);
 }
 
 .staff-item:nth-child(4) .staff-item__img-wrap::after {
-    content: url(../imgs/staff-decor-04.svg);
+    background-image: url(../imgs/staff-decor-04.svg);
 }
 
 .staff-item:nth-child(even) .staff-item__img-wrap::after {
-    bottom: initial;
-    top: 0;
+    background-position: top;
 }
 
 .staff-item__img {
