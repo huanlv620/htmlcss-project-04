@@ -481,7 +481,7 @@ input {
 
 .tab__list {
     position: relative;
-    display: flex;
+    display: inline-flex;
     column-gap: 56px;
 }
 
@@ -514,10 +514,6 @@ input {
 
 .tab__icon {
     width: 18px;
-}
-
-.tab__icon-home {
-    padding-bottom: 4px;
 }
 
 .tab__title {
