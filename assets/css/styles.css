@@ -557,3 +557,68 @@ input {
     opacity: 1;
     height: 1.5px;
 }
+
+/* SERVICE */
+.service {
+    margin-top: 185px;
+    padding: 68px 0 100px;
+    background: #fff6ed;
+}
+
+.service-top {
+    text-align: center;
+}
+
+.service__desc {
+    margin-bottom: 15px;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+
+.service__body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: 70px;
+}
+
+.service-item {
+    width: 294px;
+    height: 208px;
+    padding: 30px 28px;
+    border: 2px solid #ffbc7a42;
+    border-radius: 10px;
+}
+
+.service-item + .service-item {
+    margin-top: 24px;
+}
+
+.service-item__heading {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+
+.service-item__desc {
+    margin: 18px 0 24px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+.service-item__more {
+    display: inline-flex;
+    column-gap: 6px;
+    font-family: "Sora", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #34396a;
+}
+
+.service-item__more::after {
+    content: url(../icons/arrow-up-right.svg);
+}
