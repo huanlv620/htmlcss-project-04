@@ -1080,3 +1080,34 @@ input {
     width: 24px;
     background: #ff5b2e;
 }
+
+/*BLOG*/
+.blog {
+    padding: 78px 0;
+    /* background: yellow; */
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    padding-right: 74px;
+}
+
+.blog-desc {
+    margin: 0 0 24px;
+    width: 350px;
+}
+
+.blog__cta {
+    min-width: 182px;
+    color: #ff5b2e;
+    background: transparent;
+    border-color: rgba(255, 91, 46, 0.6);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+}
