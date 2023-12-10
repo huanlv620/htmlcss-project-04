@@ -977,7 +977,8 @@ input {
 }
 
 .review__inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     column-gap: 44px;
 }
@@ -1007,19 +1008,33 @@ input {
 }
 
 .review__content {
+    width: 100%;
+}
+
+.review__list-wrap {
+    width: 1000px;
+    height: 100%;
     overflow: hidden;
 }
 
 .review__list {
     display: flex;
+    overflow: hidden;
+    width: 400%;
+    transition: all 1s;
+}
+
+.review__list-wrap input {
+    display: none;
 }
 
 .review-item {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     flex-shrink: 0;
     column-gap: 115px;
-    width: 100%;
+    width: 25%;
 }
 
 .review-item__media {
@@ -1105,6 +1120,22 @@ input {
     cursor: default;
     width: 24px;
     background: #ff5b2e;
+}
+
+#r1:checked ~ .review__list {
+    margin-left: 0%;
+}
+
+#r2:checked ~ .review__list {
+    margin-left: -100%;
+}
+
+#r3:checked ~ .review__list {
+    margin-left: -200%;
+}
+
+#r4:checked ~ .review__list {
+    margin-left: -300%;
 }
 
 /*BLOG*/
