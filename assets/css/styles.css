@@ -162,7 +162,8 @@ input {
 
 /* HERO */
 .hero {
-    margin-top: 74px;
+    height: calc(100vh - 102px);
+    padding-top: 74px;
 }
 
 .hero__inner {
